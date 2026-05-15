@@ -12,7 +12,7 @@ let date__of__birth   = document.querySelector(".date__of__birth span");
 let text__letter      = document.querySelector(".text__letter p");
 let intervalContent, intervalTitle;
 
-/* ====== AUTO-PLAY MUSIC ====== */
+/* ====== AUTO-PLAY MUSIC NAK GAK METU WEB MU WI ====== */
 window.addEventListener('click',      () => { let m = document.getElementById("bday-audio"); if(m && m.paused) m.play().catch(()=>{}); }, { once: true });
 window.addEventListener('touchstart', () => { let m = document.getElementById("bday-audio"); if(m && m.paused) m.play().catch(()=>{}); }, { once: true });
 
