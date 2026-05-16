@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Canva App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+
+    <!-- Tombol Dark/Light Mode -->
+    <button id="toggleBtn" onclick="toggleMode()">🌙 Dark Mode</button>
+
+    <!-- Wrapper utama -->
+    <div class="container">
+
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+        <div class="profile">
+          <div class="avatar">A</div>
+          <div>
+            <p class="nama">Ahmad Haifullah D.N</p>
+            <p class="email">doktergia@gmail.com</p>
+          </div>
+        </div>
+
+        <p class="menu-label">MAIN</p>
+        <ul class="menu">
+          <li class="active">📝 All notes</li>
+          <li>🔖 Favorites</li>
+          <li>🕐 Recent notes</li>
+          <li>🏷️ Tags</li>
+        </ul>
+
+        <p class="menu-label">ORDER</p>
+        <ul class="menu">
+          <li>📓 Notebooks</li>
+          <li>📁 Projects</li>
+          <li>🔗 Shared</li>
+        </ul>
+
+        <p class="menu-label">SETTINGS</p>
+        <ul class="menu">
+          <li>⚙️ Settings</li>
+          <li>🔄 Sync Status</li>
+        </ul>
+      </div>
+
+      <!-- KONTEN UTAMA -->
+      <main>
+
+        <!-- Header Absensi -->
+        <div class="header-box">
+          <h1>ABSENSI</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien
+            nec ligula convallis tincidunt. Sed at nunc a enim efficitur commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+
+        <!-- Baris 1 -->
+        <div class="row">
+          <div class="card">
+            <label class="absen">
+              <input type="checkbox" onchange="toggleAbsen(this)">
+              <h4>Ahmad Haifullah D.N</h4>
+            </label>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien nec ligula convallis tincidunt.</p>
+          </div>
+
+          <div class="card">
+            <label class="absen">
+              <input type="checkbox" onchange="toggleAbsen(this)">
+              <h4>Baskara Putra</h4>
+            </label>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien nec ligula convallis tincidunt.</p>
+          </div>
+
+          <div class="card">
+            <label class="absen">
+              <input type="checkbox" onchange="toggleAbsen(this)">
+              <h4>Ferdinand Yogie P.</h4>
+            </label>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien nec ligula convallis tincidunt.</p>
+          </div>
+
+          <div class="card">
+            <label class="absen">
+              <input type="checkbox" onchange="toggleAbsen(this)">
+              <h4>Gabriel Rey</h4>
+            </label>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien nec ligula convallis tincidunt.</p>
+          </div>
+
+          <div class="card">
+            <label class="absen">
+              <input type="checkbox" onchange="toggleAbsen(this)">
+              <h4>Rio</h4>
+            </label>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien nec ligula convallis tincidunt.</p>
+          </div>
+
+          <div class="card">
+            <label class="absen">
+              <input type="checkbox" onchange="toggleAbsen(this)">
+              <h4>Baim</h4>
+            </label>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien nec ligula convallis tincidunt.</p>
+          </div>
+
+          <div class="card">
+            <label class="absen">
+              <input type="checkbox" onchange="toggleAbsen(this)">
+              <h4>Nylove</h4>
+            </label>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien nec ligula convallis tincidunt.</p>
+          </div>
+        </div>
+
+        <!-- Baris 2 -->
+        <div class="row">
+          <div class="card">
+            <label class="absen">
+              <input type="checkbox" onchange="toggleAbsen(this)">
+              <h4>Aldiansyah Eka S.H</h4>
+            </label>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien nec ligula convallis tincidunt.</p>
+          </div>
+
+          <div class="card">
+            <label class="absen">
+              <input type="checkbox" onchange="toggleAbsen(this)">
+              <h4>Kalila</h4>
+            </label>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien nec ligula convallis tincidunt.</p>
+          </div>
+
+          <div class="card">
+            <label class="absen">
+              <input type="checkbox" onchange="toggleAbsen(this)">
+              <h4>Dzaky Naufal A.</h4>
+            </label>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien nec ligula convallis tincidunt.</p>
+          </div>
+          
+          <div class="card">
+            <label class="absen">
+              <input type="checkbox" onchange="toggleAbsen(this)">
+              <h4>Aldiansyah Eka S.H</h4>
+            </label>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien nec ligula convallis tincidunt.</p>
+          </div>
+
+          <div class="card">
+            <label class="absen">
+              <input type="checkbox" onchange="toggleAbsen(this)">
+              <h4>Jaya</h4>
+            </label>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien nec ligula convallis tincidunt.</p>
+          </div>
+
+          <div class="card">
+            <label class="absen">
+              <input type="checkbox" onchange="toggleAbsen(this)">
+              <h4>Robby</h4>
+            </label>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien nec ligula convallis tincidunt.</p>
+          </div>
+
+          <div class="card">
+            <label class="absen">
+              <input type="checkbox" onchange="toggleAbsen(this)">
+              <h4>Kencana</h4>
+            </label>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien nec ligula convallis tincidunt.</p>
+          </div>
+
+        <!-- Baris 3 -->
+        <div class="row">
+          <div class="card">
+            <label class="absen">
+              <input type="checkbox" onchange="toggleAbsen(this)">
+              <h4>Daffa Hafizh A.</h4>
+            </label>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien nec ligula convallis tincidunt.</p>
+          </div>
+
+          <div class="card">
+            <label class="absen">
+              <input type="checkbox" onchange="toggleAbsen(this)">
+              <h4>Dika</h4>
+            </label>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien nec ligula convallis tincidunt.</p>
+          </div>
+
+          <div class="card">
+            <label class="absen">
+              <input type="checkbox" onchange="toggleAbsen(this)">
+              <h4>Andi</h4>
+            </label>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien nec ligula convallis tincidunt.</p>
+          </div>
+        </div>
+
+        <!-- Baris 4 -->
+        <div class="row">
+          <div class="card">
+            <label class="absen">
+              <input type="checkbox" onchange="toggleAbsen(this)">
+              <h4>Daffa Hafizh A.</h4>
+            </label>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien nec ligula convallis tincidunt.</p>
+          </div>
+
+          <div class="card">
+            <label class="absen">
+              <input type="checkbox" onchange="toggleAbsen(this)">
+              <h4>Abima Kresnanda</h4>
+            </label>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel sapien nec ligula convallis tincidunt.</p>
+          </div>
+        </div>
+
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

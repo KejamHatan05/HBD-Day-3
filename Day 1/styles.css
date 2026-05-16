@@ -1,0 +1,229 @@
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+.sidebar {
+    width: 220px;
+    min-height: 100vh;
+    background: #f9f9f9;
+    padding: 20px;
+    border-right: 1px solid #e0e0e0;
+    flex-shrink: 0;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Time New Roman', serif;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.nama{
+    font-weight: bold;
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+.email{
+    font-size: 0.75rem;
+    color: #888;
+    margin: 0;
+}
+
+.menu-label {
+    font-size: 0.7rem;
+    color: #aaa;
+    margin: 20px 0 8px 0;
+    letter-spacing: 1px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.menu li.active {
+    background: #efefef;
+    font-weight: bold;
+    color: #000;
+}
+
+.menu li:hover {
+    background: #efefef;
+}
+
+main {
+    margin-top:30px; /* jarak antara header dengan card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.row {
+    display: flex;
+    gap: 30px;          /* jarak antara 2 card */
+    width: 1500px;       /* lebar total card */
+    margin-bottom: 10px;
+}
+
+.card {
+    margin-top: 0;
+}
+
+.row .card {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.card{
+    border: 2px solid #f1f1f1;
+
+    padding: 1rem;
+    border-radius: 0.4rem;
+}
+
+.card h4{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+
+    font-size: 1.3rem;
+
+    color: #333;
+}
+
+.card p{
+    font-size: 1rem;
+    color: #333;
+
+    letter-spacing: 0.04em;
+    font-weight: 300;
+}
+
+/* jarak nama Ahmad dengan deskripsi */
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.absen {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+/* untuk center card */
+.card {
+    border: 2px solid #f1f1f1;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    width: 400px;
+    margin: 0 auto;
+}
+
+/* jarak antar card */
+.card {
+    border: 2px solid #f1f1f1;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    margin-bottom: 20px;
+}
+
+/* tombol toggle light mode dan dark mode */
+#toggleBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* dark mode style nak ser ngerubah*/
+body.dark {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+body.dark .card {
+    background-color: #2d2d2d;
+    border-color: #444;
+}
+
+body.dark .card h4,
+body.dark .card p {
+    color: white;
+}
+
+.absen {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.absen input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: green;
+}
+
+/* nama dicoret saat dicentang */
+.absen.hadir h4 {
+    text-decoration: line-through;
+    color: green;
+}
+

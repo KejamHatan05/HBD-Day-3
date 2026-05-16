@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    color: #333;
+}
+
+/* ===== LAYOUT UTAMA ===== */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    width: 220px;
+    min-height: 100vh;
+    background: #ffffff;
+    padding: 24px 16px;
+    border-right: 1px solid #e5e5e5;
+    flex-shrink: 0;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.nama {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #111;
+}
+
+.email {
+    font-size: 0.72rem;
+    color: #999;
+    margin-top: 2px;
+}
+
+.menu-label {
+    font-size: 0.65rem;
+    color: #bbb;
+    letter-spacing: 1.5px;
+    margin: 16px 0 6px 8px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.88rem;
+    color: #555;
+    margin-bottom: 2px;
+}
+
+.menu li:hover {
+    background: #f5f5f5;
+    color: #111;
+}
+
+.menu li.active {
+    background: #f0f0f0;
+    font-weight: 600;
+    color: #111;
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+    flex: 1;
+    padding: 28px;
+    background: #f7f7f7;
+}
+
+/* ===== HEADER ABSENSI ===== */
+.header-box {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.header-box h1 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #111;
+    text-align: left;
+}
+
+.header-box p {
+    font-size: 0.88rem;
+    color: #888;
+    line-height: 1.7;
+}
+
+/* ===== GRID CARD ===== */
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 14px;
+    margin-bottom: 14px;
+    width: 100%;
+}
+
+/* ===== CARD ===== */
+.card {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    padding: 16px 18px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: box-shadow 0.2s, transform 0.2s;
+    width: auto;
+    margin: 0;
+}
+
+.card:hover {
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.absen {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.absen input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    accent-color: #4caf50;
+    flex-shrink: 0;
+}
+
+.card h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #111;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.card p {
+    font-size: 0.83rem;
+    color: #888;
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+/* nama dicoret saat dicentang */
+.absen.hadir h4 {
+    text-decoration: line-through;
+    color: #4caf50;
+}
+
+/* ===== TOMBOL DARK/LIGHT MODE ===== */
+#toggleBtn {
+    position: fixed;
+    top: 16px;
+    right: 20px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    font-size: 0.88rem;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ===== DARK MODE ===== */
+body.dark {
+    background: #1a1a1a;
+    color: #eee;
+}
+
+body.dark .sidebar {
+    background: #242424;
+    border-color: #333;
+}
+
+body.dark .nama { color: #fff; }
+body.dark .email { color: #777; }
+
+body.dark .menu li { color: #aaa; }
+body.dark .menu li.active,
+body.dark .menu li:hover {
+    background: #333;
+    color: #fff;
+}
+
+body.dark main {
+    background: #1a1a1a;
+}
+
+body.dark .card,
+body.dark .header-box {
+    background: #2d2d2d;
+    border-color: #3a3a3a;
+}
+
+body.dark .card h4 { color: #fff; }
+body.dark .card p { color: #aaa; }
+body.dark .header-box h1 { color: #fff; }
+body.dark .header-box p { color: #aaa; }
+
+body.dark #toggleBtn {
+    background: #333;
+    color: #fff;
+    border-color: #555;
+}

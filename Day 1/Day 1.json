@@ -1,0 +1,11 @@
+{
+    "tabnine.experimentalAutoImports": true,
+    "claudeCode.preferredLocation": "panel",
+    "remote.portsAttributes": {
+        "3000": {
+            "protocol": "https"
+        }
+    },
+    "workbench.activityBar.location": "hidden",
+    "workbench.colorTheme": "Dark Modern"
+}
